@@ -1,4 +1,4 @@
-require('./src/models/user');
+require('./src/models/User');
 require('./src/models/Track');
 const express = require('express');
 const mongoose = require('mongoose');
