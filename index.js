@@ -34,5 +34,5 @@ app.get('/',requireAuth,(req,res)=>{
 })
 
 app.listen(PORT,()=>{
-    console.log('listening on port 3001');
+    console.log('listening on '+ PORT);
 })
