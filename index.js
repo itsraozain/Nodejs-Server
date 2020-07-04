@@ -6,6 +6,7 @@ const bodyParser=require('body-parser');
 const authRoutes= require('./src/routes/authRoutes');
 const trackRoutes=require('./src/routes/trackRoutes');
 const requireAuth=require('./src/midlewares/requireAuth');
+const PORT = process.env.PORT || 3001;
 
 const app = express();
 
@@ -32,6 +33,6 @@ app.get('/',requireAuth,(req,res)=>{
     res.send(`Your Email is: ${req.user.email}`);
 })
 
-app.listen(3001,()=>{
+app.listen(PORT,()=>{
     console.log('listening on port 3001');
 })
