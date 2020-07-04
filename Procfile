@@ -1,1 +1,1 @@
-web: node index.js
+android: node index.js
