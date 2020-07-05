@@ -32,6 +32,6 @@ router.post('/tracks', async (req, res) => {
   }
 });
 
-router.delete(`/tracks/${_id}`);
+//router.delete(`/tracks/${_id}`);
 
 module.exports = router;
